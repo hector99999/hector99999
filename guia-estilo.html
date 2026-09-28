@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía de estilo | Los Gatitos Lindos+</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" aria-label="Los Gatitos Lindos+, inicio"><span aria-hidden="true">🐾</span> Los Gatitos Lindos+</a>
+    <nav aria-label="Navegación principal"><ul>
+      <li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios y tarifas</a></li>
+      <li><a href="equipo.html">Equipo</a></li><li><a href="reserva.html">Reserva tu cita</a></li>
+    </ul></nav>
+  </header>
+  <main>
+    <h1>Guía de estilo inicial</h1>
+    <p>Esta guía define una dirección visual para la fase de CSS. Los colores y la identidad final deben validarse con diseño gráfico.</p>
+    <section aria-labelledby="marca">
+      <h2 id="marca">Marca</h2>
+      <p>El identificador combinará una huella de pata con el nombre «Los Gatitos Lindos+». La huella aporta cercanía; una construcción limpia y espacios generosos sostienen la percepción profesional.</p>
+    </section>
+    <section aria-labelledby="color">
+      <h2 id="color">Paleta propuesta</h2>
+      <dl>
+        <dt>Verde azulado principal — #006D77</dt><dd>Color de marca para cabeceras, enlaces destacados y acciones principales.</dd>
+        <dt>Naranja de acento — #E76F51</dt><dd>Reserva, avisos y llamadas a la acción; se usará de forma limitada para conservar su énfasis.</dd>
+        <dt>Azul oscuro — #16324F</dt><dd>Texto principal para asegurar contraste y lectura cómoda.</dd>
+        <dt>Fondo claro — #F8F9F7</dt><dd>Base neutra que reduce la fatiga visual.</dd>
+      </dl>
+      <p>En la implementación visual se comprobará contraste suficiente entre texto y fondo (mínimo AA) y no se usará el color como único indicador de estado.</p>
+    </section>
+    <section aria-labelledby="tipografia">
+      <h2 id="tipografia">Tipografía y jerarquía</h2>
+      <ul>
+        <li><strong>Familia:</strong> tipografía sans serif del sistema para un rendimiento rápido y una lectura nítida en móvil.</li>
+        <li><strong>Texto base:</strong> 16 px como mínimo, con interlineado amplio.</li>
+        <li><strong>Jerarquía:</strong> un único encabezado principal por página; encabezados de sección y de bloque en orden semántico.</li>
+        <li><strong>Enlaces y controles:</strong> etiquetas descriptivas, áreas táctiles amplias y foco visible.</li>
+      </ul>
+    </section>
+    <section aria-labelledby="html5">
+      <h2 id="html5">Decisión técnica: HTML5 sin marcos</h2>
+      <p>Se emplea HTML5 semántico en lugar de frames: <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code> y <code>footer</code> describen el contenido a navegadores, buscadores y tecnologías de apoyo. Los frames están obsoletos en HTML5, dificultan la navegación, las URL, el historial y la adaptación a móvil.</p>
+      <p>Las tablas se reservan exclusivamente para datos comparables de tarifas y planes. La distribución se realizará posteriormente con CSS por capas; este prototipo mantiene contenido y presentación separados y no usa CSS.</p>
+    </section>
+  </main>
+  <footer><p><a href="index.html">Volver al inicio</a></p></footer>
+</body>
+</html>

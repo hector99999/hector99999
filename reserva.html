@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Reserva una cita en Los Gatitos Lindos+.">
+  <title>Reserva tu cita | Los Gatitos Lindos+</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" aria-label="Los Gatitos Lindos+, inicio"><span aria-hidden="true">🐾</span> Los Gatitos Lindos+</a>
+    <nav aria-label="Navegación principal"><ul>
+      <li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios y tarifas</a></li>
+      <li><a href="equipo.html">Equipo</a></li><li><a href="reserva.html" aria-current="page">Reserva tu cita</a></li>
+    </ul></nav>
+  </header>
+  <main>
+    <h1>Reserva tu cita</h1>
+    <p>Completa el formulario y te confirmaremos la disponibilidad lo antes posible.</p>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <p><label for="nombre">Nombre y apellidos</label><br><input id="nombre" name="nombre" type="text" autocomplete="name" required></p>
+        <p><label for="telefono">Teléfono</label><br><input id="telefono" name="telefono" type="tel" autocomplete="tel" required></p>
+        <p><label for="email">Correo electrónico</label><br><input id="email" name="email" type="email" autocomplete="email" required></p>
+      </fieldset>
+      <fieldset>
+        <legend>Datos de la cita</legend>
+        <p><label for="centro">Centro preferido</label><br><select id="centro" name="centro" required><option value="">Selecciona un centro</option><option>Madrid Centro</option><option>Alcorcón</option><option>Móstoles</option></select></p>
+        <p><label for="mascota">Tipo de mascota</label><br><select id="mascota" name="mascota" required><option value="">Selecciona una opción</option><option>Perro</option><option>Gato</option><option>Animal exótico</option><option>Otra</option></select></p>
+        <p><label for="servicio">Servicio solicitado</label><br><select id="servicio" name="servicio" required><option value="">Selecciona un servicio</option><option>Consulta general</option><option>Vacunación</option><option>Revisión preventiva</option><option>Cirugía</option><option>Otro</option></select></p>
+        <p><input id="urgente" name="urgente" type="checkbox" value="si"><label for="urgente">Necesito atención urgente</label></p>
+        <p><label for="mensaje">Información adicional</label><br><textarea id="mensaje" name="mensaje" rows="5"></textarea></p>
+      </fieldset>
+      <p><button type="submit">Solicitar cita</button></p>
+    </form>
+  </main>
+  <footer><p><a href="index.html">Los Gatitos Lindos+</a> · Madrid Centro · Alcorcón · Móstoles</p></footer>
+</body>
+</html>
